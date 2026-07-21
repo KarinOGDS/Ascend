@@ -1,0 +1,115 @@
+/* ========================================
+   ASCEND DESIGN SYSTEM
+======================================== */
+
+/* ---------- Design Tokens ---------- */
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/inter/inter-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/inter/inter-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/inter/inter-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/inter/inter-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    /* Colors */
+    --color-background: #0F0F0F;
+    --color-surface: #1B1B1B;
+    --color-primary: #8B0000;
+    --color-accent: #D32F2F;
+
+    /* Text */
+    --color-text-primary: #F5F5F5;
+    --color-text-secondary: #B3B3B3;
+
+    /* Border */
+    --color-border: #2C2C2C;
+
+    /* Status */
+    --color-success: #2E7D32;
+    --color-danger: #C62828;
+
+    /* Typography */
+    --font-family-base: 'Inter', sans-serif;
+
+    --font-weight-regular: 400;
+
+    --font-weight-medium: 500;
+
+    --font-weight-semibold: 600;
+
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Transitions */
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+}
+
+/* ---------- Reset ---------- */
+
+
+
+/* ---------- Global Styles ---------- */
+
+
+
+/* ---------- Layout ---------- */
+
+
+
+/* ---------- Components ---------- */
+
+
+
+/* ---------- Utilities ---------- */
