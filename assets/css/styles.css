@@ -118,162 +118,207 @@
     --font-size-3xl: 1.875rem;
     /* Logo / Hero */
 }
-    /* ---------- Reset ---------- */
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+/* ---------- Reset ---------- */
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    button {
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-    /* ---------- Global Styles ---------- */
-    h1 {
-        font-size: var(--font-size-2xl);
-        font-weight: var(--font-weight-bold);
-    }
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
-    h2 {
-        font-size: var(--font-size-xl);
-        font-weight: var(--font-weight-bold);
-    }
+/* ---------- Global Styles ---------- */
+h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+}
 
-    h3 {
-        font-size: var(--font-size-lg);
-        font-weight: var(--font-weight-bold);
-    }
+h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
 
-    p {
-        font-size: var(--font-size-md);
+h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
 
-    }
+p {
+    font-size: var(--font-size-md);
 
-    .logo {
-        height: var(--font-size-3xl);
-    }
+}
 
-    body {
-        font-family: var(--font-family-base);
-        font-weight: var(--font-weight-regular);
-        background-color: var(--color-background);
-        color: var(--color-text-primary);
-        min-height: 100vh;
-        line-height: 1.5;
+.logo {
+    height: var(--font-size-3xl);
+}
 
-
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    ul,
-    ol {
-        list-style: none;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    input,
-    button,
-    textarea,
-    select {
-        font: inherit;
-    }
-
-    /* ---------- Layout ---------- */
+body {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
 
 
-    main {
-        flex: 1;
-        padding: var(--space-md);
-        display: flex;
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: var(--space-md);
-        background-color: var(--color-surface);
-        border-bottom: 1px solid var(--color-border);
-    }
+}
 
-    .content-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--space-md);
-        margin-top: var(--space-md);
-    }
+ul,
+ol {
+    list-style: none;
+}
 
-    .dashboard-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: var(--space-md);
-        margin-top: var(--space-md);
-    }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-    .muscles-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: var(--space-md);
-        margin-top: var(--space-md);
-    }
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
 
-    .user-progress {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-sm);
-    }
-
-    .user-profile {
-        display: flex;
-        align-items: center;
-        gap: var(--space-md);
-    }
+/* ---------- Layout ---------- */
 
 
-    /* ---------- Components ---------- */
+main {
+    flex: 1;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+}
 
-    .dashboard-card {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-surface);
-        border: 1px solid var(--color-border);
-        padding: var(--space-md);
-        box-shadow: var(--shadow-sm);
-        border-radius: var(--radius-md);
-        gap: var(--space-sm);
-    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
 
-    .hero-panel {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-surface);
-        border: 1px double var(--color-border);
-        padding: var(--space-lg);
-        box-shadow: var(--shadow-lg);
-        border-radius: var(--radius-md);
-        gap: var(--space-md);
-    }
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
 
-    .hero-panel__motto {
-        font-style: italic;
-        color: var(--color-text-secondary);
-        font-weight: var(--font-weight-medium);
-    }
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
 
-    /* ---------- Utilities ---------- */
+.muscles-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.user-progress {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+
+/* ---------- Components ---------- */
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-md);
+    gap: var(--space-sm);
+}
+
+.hero-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    gap: var(--space-md);
+}
+
+.hero-panel__motto {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.muscle-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-md);
+    gap: var(--space-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+                border-color var(--transition-fast);
+}
+
+.muscle-card__icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.muscle-card__name {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+.muscle-card__rank {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.muscle-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.progress-bar {
+    border-radius: var(--radius-sm);
+    background-color: var(--color-accent);
+    overflow: hidden;
+}
+
+/* ---------- Utilities ---------- */
