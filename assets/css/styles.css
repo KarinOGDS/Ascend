@@ -117,7 +117,7 @@
 
     --font-size-3xl: 1.875rem;
     /* Logo / Hero */
-
+}
     /* ---------- Reset ---------- */
 
     * {
@@ -140,21 +140,25 @@
     /* ---------- Global Styles ---------- */
     h1 {
         font-size: var(--font-size-2xl);
+        font-weight: var(--font-weight-bold);
     }
 
     h2 {
         font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
     }
 
     h3 {
         font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
     }
 
     p {
         font-size: var(--font-size-md);
+
     }
 
-    .logo img {
+    .logo {
         height: var(--font-size-3xl);
     }
 
@@ -241,6 +245,9 @@
         gap: var(--space-md);
     }
 
+
+    /* ---------- Components ---------- */
+
     .dashboard-card {
         display: flex;
         flex-direction: column;
@@ -252,8 +259,21 @@
         gap: var(--space-sm);
     }
 
-    /* ---------- Components ---------- */
+    .hero-panel {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-surface);
+        border: 1px double var(--color-border);
+        padding: var(--space-lg);
+        box-shadow: var(--shadow-lg);
+        border-radius: var(--radius-md);
+        gap: var(--space-md);
+    }
 
-
+    .hero-panel__motto {
+        font-style: italic;
+        color: var(--color-text-secondary);
+        font-weight: var(--font-weight-medium);
+    }
 
     /* ---------- Utilities ---------- */
