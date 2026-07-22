@@ -10,29 +10,44 @@
 
 <body>
     <header>
-        <img src="assets/images/logo.png" alt="Ascend Logo">
-        <p>Level</p>
-        <p>Xp</p>
-        <p>Profile</p>
+        <img src="assets/images/logo.png" alt="Ascend Logo" class="logo">
+        <div class="user-progress">
+            <p>Lvl. 5</p>
+            <p>XP: 1200/2000</p>
+        </div>
+        <div class="user-profile">
+            <img src="assets/images/profile.jpg" alt="Profile Picture">
+            <p>Username</p>
+        </div>
+
     </header>
     <main>
         <section class="dashboard-grid">
             <h2>Dashboard</h2>
             <div class="dashboard-cards">
-                <section>
+                <section class="dashboard-card">
+                    
                     <h3>Level</h3>
+                    <p>5</p>
                 </section>
-                <section>
+                <section class="dashboard-card">
+                    
                     <h3>Xp</h3>
+                    <p>1200/2000</p>
                 </section>
-                <section>
+                <section class="dashboard-card">
+                    
                     <h3>Current Streak</h3>
+                    <p>7 days</p>
                 </section>
-                <section>
+                <section class="dashboard-card">
+                    
                     <h3>total workouts</h3>
+                    <p>24</p>
                 </section>
             </div>
         </section>
+        <div class="content-grid">
         <section class="muscles-grid">
             <h3>Muscles</h3>
             <div class="muscles-cards">
@@ -75,6 +90,7 @@
         <section class="classifications-grid">
             <h2>Classifications</h2>
         </section>
+    </div>
     </main>
     <footer>
         <p>&copy; 2026 Ascend. All rights reserved.</p>

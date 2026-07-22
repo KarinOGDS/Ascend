@@ -94,22 +94,166 @@
     /* Transitions */
     --transition-fast: 150ms;
     --transition-normal: 300ms;
-}
 
-/* ---------- Reset ---------- */
+    /* Font Sizes */
+
+    --font-size-xs: 0.75rem;
+    /* Captions */
+
+    --font-size-sm: 0.875rem;
+    /* Small text */
+
+    --font-size-md: 1rem;
+    /* Body */
+
+    --font-size-lg: 1.125rem;
+    /* Cards */
+
+    --font-size-xl: 1.25rem;
+    /* Section titles */
+
+    --font-size-2xl: 1.5rem;
+    /* Main headings */
+
+    --font-size-3xl: 1.875rem;
+    /* Logo / Hero */
+
+    /* ---------- Reset ---------- */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    /* ---------- Global Styles ---------- */
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    p {
+        font-size: var(--font-size-md);
+    }
+
+    .logo img {
+        height: var(--font-size-3xl);
+    }
+
+    body {
+        font-family: var(--font-family-base);
+        font-weight: var(--font-weight-regular);
+        background-color: var(--color-background);
+        color: var(--color-text-primary);
+        min-height: 100vh;
+        line-height: 1.5;
+
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    /* ---------- Layout ---------- */
+
+
+    main {
+        flex: 1;
+        padding: var(--space-md);
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-md);
+        background-color: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+        margin-top: var(--space-md);
+    }
+
+    .dashboard-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--space-md);
+        margin-top: var(--space-md);
+    }
+
+    .muscles-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: var(--space-md);
+        margin-top: var(--space-md);
+    }
+
+    .user-progress {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    .dashboard-card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-surface);
+        border: 1px solid var(--color-border);
+        padding: var(--space-md);
+        box-shadow: var(--shadow-sm);
+        border-radius: var(--radius-md);
+        gap: var(--space-sm);
+    }
+
+    /* ---------- Components ---------- */
 
 
 
-/* ---------- Global Styles ---------- */
-
-
-
-/* ---------- Layout ---------- */
-
-
-
-/* ---------- Components ---------- */
-
-
-
-/* ---------- Utilities ---------- */
+    /* ---------- Utilities ---------- */
