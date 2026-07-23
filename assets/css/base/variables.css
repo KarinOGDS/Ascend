@@ -59,4 +59,33 @@
     --radius-xl: 24px;
     --radius-full: 999px;
 
+
+    /* ========================================
+   Rank Colors
+======================================== */
+
+    /* Novice */
+    --rank-novice-primary: #7A7A7A;
+    --rank-novice-secondary: #A8A8A8;
+    --rank-novice-glow: rgba(168, 168, 168, 0.18);
+
+    /* Apprentice */
+    --rank-apprentice-primary: #8B0000;
+    --rank-apprentice-secondary: #D32F2F;
+    --rank-apprentice-glow: rgba(211, 47, 47, 0.25);
+
+    /* Warrior */
+    --rank-warrior-primary: #5E646C;
+    --rank-warrior-secondary: #B0BEC5;
+    --rank-warrior-glow: rgba(176, 190, 197, 0.22);
+
+    /* Champion */
+    --rank-champion-primary: #B8860B;
+    --rank-champion-secondary: #FFD54F;
+    --rank-champion-glow: rgba(255, 213, 79, 0.28);
+
+    /* Legend */
+    --rank-legend-primary: #E6C86E;
+    --rank-legend-secondary: #FFF3C4;
+    --rank-legend-glow: rgba(255, 243, 196, 0.35);
 }
