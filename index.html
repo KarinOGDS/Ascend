@@ -17,8 +17,9 @@
         </div>
 
     </header>
-    <main>
-        <div class="panel-dashboard">
+    <main class="layout">
+        <section class="layout__left">
+ 
             <!--               Hero panel                 -->
             <section class="hero-panel">
                 <div class="hero-panel__content">
@@ -30,7 +31,7 @@
                     </h1>
                     <div class="hero-panel__rank">
                         <div class="hero-panel__badge">
-                            <!-- Badge del rango -->
+                            <img src="assets/icons/badge.svg" alt="Level">
                         </div>
                         <div class="hero-panel__level">
                             <h2>Knight</h2>
@@ -41,206 +42,462 @@
                     <!--                Progress Bar              -->
 
                     <div class="hero-panel__progress">
+                        <div class="hero-panel__progress-header">
+                            <img src="assets/icons/xp.svg">
+                            <span>XP Progress</span>
+                        </div>
                         <div class="progress-bar">
                             <div class="progress-bar__fill" style="width: 60%;">
                             </div>
                         </div>
-                        <div class="progress-bar__info">
-                            <span>1,200 XP</span>
-                            <span>2,000 XP</span>
+                        <div class="hero-panel__progress-info">
+                            <strong>1,200 / 2,000 XP</strong>
                         </div>
-                        <div class="hero-panel__next-rank">
+                        <div class="hero-panel__rank-info">
                             <span>Next Rank</span>
                             <strong>Champion</strong>
                         </div>
                         <p class="hero-panel__remaining">
+
                             800 XP Remaining
                         </p>
+                        <p class="hero-panel__motto">
+                            Progress Earned.
+                            Never Given.
+                        </p>
                     </div>
-                    <p class="hero-panel__motto">
-                        Progress Earned.
-                        Never Given.
-                    </p>
-                </div>
-                <!--               Character                 -->
-                <div class="hero-panel__character">
-                    <img class="hero-panel__avatar" src="assets/images/champion.png" alt="Champion Avatar">
-                </div>
-
+                    <div class="hero-panel__character">
+                        <div class="hero-panel__character-bg"></div>
+                        <img class="hero-panel__avatar" src="assets/avatars/champion.png">
+                    </div>
             </section>
+            <section class="muscles-grid">
+                <h3>Muscles</h3>
+                <div class="muscles-cards">
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/chest.svg" alt="Chest">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Chest
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/triceps.svg" alt="triceps">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Triceps
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/back.svg" alt="back">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Back
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/Trapezius.svg" alt="Trapezius">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Trapezius
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/Biceps.svg" alt="Biceps">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Biceps
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/shoulders.svg" alt="shoulders">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Shoulders
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/Forearms.svg" alt="Forearms">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Forearms
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/legs.svg" alt="legs">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Legs
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/glutes.svg" alt="glutes">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Glutes
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/calves.svg" alt="calves">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Calves
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                    <article class="muscle-card">
+                        <div class="muscle-card__icon">
+                            <img class="muscle-card__icon" src="assets/icons/abs.svg" alt="abs">
+                        </div>
+                        <h3 class="muscle-card__name">
+                            Abs
+                        </h3>
+                        <p class="muscle-card__rank">
+                            Novice
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+
+        <aside class="layout__right">
 
             <!--               Dashboard                 -->
             <section class="dashboard">
-                <div class="dashboard-cards">
-                    <section class="dashboard-card">
-                        <h3>Workouts</h3>
-                        <p>37 days</p>
-                        <h3>Completed</h3>
+                <h2 class="dashboard__title">
+                    Your Progress Today
+                </h2>
+                <section class="dashboard-card dashboard-card--workout">
+                    <div class="dashboard-card__header">
+                        <div class="dashboard-card__title-group">
+                            <span class="dashboard-card__eyebrow">Continue Workout</span>
+                            <h3 class="dashboard-card__title">Push Day</h3>
+                            <p class="dashboard-card__subtitle">
+                                Chest • Triceps
+                            </p>
+                        </div>
+                        <div class="dashboard-card__play">
+                            <img src="assets/icons/chest.svg" alt="chest">
+                        </div>
+                    </div>
+                    <div class="dashboard-card__progress">
+                        <div class="dashboard-card__progress-top">
+                            <span>Exercise</span>
+                            <strong>3 / 8</strong>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" style="width:37%;"></div>
+                        </div>
+                        <div class="dashboard-card__progress-bottom">
+                            <span>37% Complete</span>
+                            <span>34 min left</span>
+                        </div>
+                    </div>
+                    <button class="dashboard-card__button">
+                        Resume Workout
+                        <span>→</span>
+                    </button>
+                </section>
+
+                <div class="dash-row2">
+
+                    <section class="dashboard-card dashboard-card--missions">
+                        <div class="dashboard-card__header">
+                            <div>
+                                <span class="dashboard-card__eyebrow">Today's Missions</span>
+                                <h3 class="dashboard-card__title">3 Daily Challenges</h3>
+                            </div>
+                            <span class="dashboard-card__xp">
+                                +300 XP
+                            </span>
+                        </div>
+                        <ul class="missions-list">
+                            <li class="mission mission--completed">
+                                <div class="mission__check">✓</div>
+
+                                <div class="mission__content">
+                                    <h4>Drink 2L of Water</h4>
+                                    <p>Completed</p>
+                                </div>
+                            </li>
+                            <li class="mission">
+                                <div class="mission__check"></div>
+
+                                <div class="mission__content">
+                                    <h4>Complete Workout</h4>
+                                    <p>0 / 1</p>
+                                </div>
+                            </li>
+                            <li class="mission">
+                                <div class="mission__check"></div>
+                                <div class="mission__content">
+                                    <h4>Walk 10,000 Steps</h4>
+                                    <p>6,340 / 10,000</p>
+                                </div>
+                            </li>
+                        </ul>
                     </section>
-                    <section class="dashboard-card">
-                        <h3>Longest streak</h3>
-                        <p>6</p>
-                        <h3>Days</h3>
-                    </section>
-                    <section class="dashboard-card">
-                        <h3>weekly challenge</h3>
-                        <p>5/7</p>
-                        <progress value="5" max="7" class="progress-bar"></progress>
-                    </section>
-                    <section class="dashboard-card">
-                        <h3>Last workout</h3>
-                    </section>
-                    <section class="dashboard-card">
-                        <h3>July activity</h3>
-                        <p>CALENDARIO</p>
-                    </section>
-                    <section class="dashboard-card">
-                        <h3>Daily motivation</h3>
-                        <p>“The only bad workout is the one that didn’t happen.”</p>
-                    </section>
-                    <section class="dashboard-card">
-                        <h3>achievements</h3>
-                        <p>20 unlocked</p>
-                        <p>Next achievement</p>
-                        <p>100 workouts completed</p>
-                        <p>87/100</p>
+
+                    <section class="dashboard-card dashboard-card--achievements">
+
+                        <div class="dashboard-card__header">
+
+                            <div>
+                                <span class="dashboard-card__eyebrow">
+                                    Achievements
+                                </span>
+
+                                <h3 class="dashboard-card__title">
+                                    Recent Unlocks
+                                </h3>
+                            </div>
+
+                            <a href="#" class="dashboard-card__link">
+                                View All
+                            </a>
+
+                        </div>
+
+                        <div class="achievement-list">
+
+                            <article class="achievement">
+                                <div class="achievement__icon">
+                                    🏆
+                                </div>
+
+                                <div class="achievement__content">
+                                    <h4>First Victory</h4>
+                                    <p>Complete your first workout.</p>
+                                </div>
+                            </article>
+
+                            <article class="achievement">
+                                <div class="achievement__icon">
+                                    🔥
+                                </div>
+
+                                <div class="achievement__content">
+                                    <h4>7 Day Streak</h4>
+                                    <p>Train for seven consecutive days.</p>
+                                </div>
+                            </article>
+
+                            <article class="achievement achievement--locked">
+                                <div class="achievement__icon">
+                                    ⭐
+                                </div>
+
+                                <div class="achievement__content">
+                                    <h4>Level 10</h4>
+                                    <p>Reach Level 10.</p>
+                                </div>
+                            </article>
+                        </div>
                     </section>
                 </div>
+
+                <div class="dash-row3">
+                    <section class="dashboard-card dashboard-card--recovery">
+                        <div class="dashboard-card__header">
+                            <div>
+                                <span class="dashboard-card__eyebrow">
+                                    Recovery
+                                </span>
+                                <h3 class="dashboard-card__title">
+                                    Muscle Status
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="recovery-list">
+                            <div class="recovery">
+                                <span class="recovery__muscle">
+                                    Chest
+                                </span>
+                                <div class="recovery__bar">
+                                    <div class="recovery__fill recovery__fill--100">
+                                    </div>
+                                </div>
+                                <span class="recovery__status recovery__status--ready">
+                                    Ready
+                                </span>
+                            </div>
+
+                            <div class="recovery">
+                                <span class="recovery__muscle">
+                                    Back
+                                </span>
+                                <div class="recovery__bar">
+                                    <div class="recovery__fill recovery__fill--60">
+                                    </div>
+                                </div>
+                                <span class="recovery__status recovery__status--recovering">
+                                    Recovering
+                                </span>
+                            </div>
+                            <div class="recovery">
+                                <span class="recovery__muscle">
+                                    Legs
+                                </span>
+                                <div class="recovery__bar">
+                                    <div class="recovery__fill recovery__fill--20">
+                                    </div>
+                                </div>
+                                <span class="recovery__status recovery__status--sore">
+                                    Sore
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dashboard-card dashboard-card--challenge">
+                        <div class="dashboard-card__header">
+                            <div>
+                                <span class="dashboard-card__eyebrow">
+                                    Weekly Challenge
+                                </span>
+                                <h3 class="dashboard-card__title">
+                                    Train 5 Days
+                                </h3>
+                            </div>
+                            <div class="challenge__reward">
+                                +750 XP
+                            </div>
+                        </div>
+                        <p class="challenge__description">
+                            Complete 5 workouts before Sunday to unlock your reward.
+                        </p>
+                        <div class="challenge__progress">
+                            <div class="challenge__progress-info">
+                                <span>Progress</span>
+                                <strong>3 / 5 Days</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width:60%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="challenge__days">
+                            <div class="challenge__day challenge__day--completed">M</div>
+                            <div class="challenge__day challenge__day--completed">T</div>
+                            <div class="challenge__day challenge__day--completed">W</div>
+                            <div class="challenge__day">T</div>
+                            <div class="challenge__day">F</div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="dashboard-card dashboard-card--activity">
+                    <div class="dashboard-card__header">
+                        <div>
+                            <span class="dashboard-card__eyebrow">
+                                Activity
+                            </span>
+                            <h3 class="dashboard-card__title">
+                                Last 35 Days
+                            </h3>
+                        </div>
+                        <span class="activity__streak">
+                            🔥 17 Days
+                        </span>
+                    </div>
+                    <div class="activity-grid">
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--0"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--0"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--0"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--4"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--4"></div>
+                    </div>
+                    <div class="activity-legend">
+                        <span>Less</span>
+                        <div class="activity activity--0"></div>
+                        <div class="activity activity--1"></div>
+                        <div class="activity activity--2"></div>
+                        <div class="activity activity--3"></div>
+                        <div class="activity activity--4"></div>
+                        <span>More</span>
+                    </div>
+                </section>
+
             </section>
-        </div>
-
-        <!--                      Muscles                -->
-        <section class="muscles-grid">
-            <h3>Muscles</h3>
-            <div class="muscles-cards">
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Chest
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Triceps
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Back
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Trapezius
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Biceps
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Shoulders
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Forearms
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Legs
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Glutes
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Calves
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-                <article class="muscle-card">
-                    <div class="muscle-card__icon">
-                        <!-- Icono -->
-                    </div>
-                    <h3 class="muscle-card__name">
-                        Abs
-                    </h3>
-                    <p class="muscle-card__rank">
-                        Novice
-                    </p>
-                </article>
-            </div>
-        </section>
-
+        </aside>
     </main>
+
+
     <footer>
         <p>&copy; 2026 Ascend. All rights reserved.</p>
     </footer>
+
+
 </body>
 
 </html>
