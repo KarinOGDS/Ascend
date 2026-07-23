@@ -1,0 +1,49 @@
+main {
+    flex: 1;
+    padding: var(--space-lg);
+
+}.layout {
+    display: grid;
+    grid-template-columns: minmax(500px, 1.2fr) minmax(420px, .9fr);
+    gap: 2rem;
+    align-items: start;
+    overflow: visible;
+}
+
+.layout__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+
+}
+
+.layout__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.muscles-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.user-progress {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

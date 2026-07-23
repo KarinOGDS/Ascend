@@ -1,0 +1,19 @@
+.dashboard-card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: linear-gradient(90deg,
+            var(--color-primary),
+            var(--color-accent));
+
+    color: white;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.dashboard-card__button:hover {
+    filter: brightness(1.1);
+}

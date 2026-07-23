@@ -1,0 +1,182 @@
+.hero-panel {
+    display: flex;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    gap: var(--space-md);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .35),
+        inset 0 1px 0 rgba(255, 255, 255, .02);
+    background:
+        radial-gradient(circle at top left,
+            rgba(255, 255, 255, .03),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(211, 47, 47, .08),
+            transparent 45%),
+        linear-gradient(145deg,
+            #1D1D1D,
+            #171717,
+            #111111);
+    position: relative;
+    overflow: visible;
+    height: 490px;
+}
+
+.hero-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color-accent),
+            transparent);
+
+
+}
+
+
+.hero-panel__content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    padding: 1rem 0;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.hero-panel__greeting {
+    color: var(--color-text-secondary);
+    margin-bottom: .25rem;
+    font-size: .9rem;
+    opacity: .55;
+    letter-spacing: .08em;
+}
+
+.hero-panel__username {
+
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0rem;
+    letter-spacing: -2px;
+    font-size: 4rem;
+    line-height: .9;
+    letter-spacing: -3px;
+    color: #FFFFFF;
+    text-shadow:
+        0 4px 18px rgba(255, 255, 255, .05);
+
+}
+
+.hero-panel__rank {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    margin-bottom: 0rem;
+}
+
+.hero-panel__badge {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-panel__level p {
+    font-size: .9rem;
+    color: var(--color-text-secondary);
+}
+
+.hero-panel__level h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.hero-panel__progress {
+    margin: .5rem 0;
+}
+
+.hero-panel__progress-header {
+    display: flex;
+    height: 40px;
+}
+
+.hero-panel__progress-info {
+    margin-top: .75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero-panel__rank-info {
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-secondary);
+}
+
+.hero-panel__rank-info strong {
+    color: white;
+}
+
+.hero-panel__character {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 55%;
+
+}
+
+.hero-panel__character-bg {
+    position: absolute;
+    width: 520px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: none;
+    filter: blur(40px);
+    opacity: .85;
+}
+
+.hero-panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 78% 55%,
+            rgba(211, 47, 47, .08),
+            transparent 60%);
+
+    pointer-events: none;
+}
+
+.hero-panel__avatar {
+
+    position: absolute;
+    z-index: 2;
+    filter:
+        drop-shadow(0 40px 60px rgba(0, 0, 0, .55)) drop-shadow(0 0 20px rgba(211, 47, 47, .08));
+    width: 560px;
+    right: -40px;
+    bottom: -18px;
+}
+
+.hero-panel__motto {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-top: auto;
+}
+
+.hero-panel__avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+}

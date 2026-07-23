@@ -1,0 +1,10 @@
+@keyframes progress-shine {
+    from {
+        left: -30%;
+    }
+
+    to {
+        left: 130%;
+    }
+
+}
