@@ -1,0 +1,686 @@
+/* ==========================================================
+   MUSCLE HERO
+========================================================== */
+
+.muscle-hero {
+
+    position: relative;
+
+    width: 100%;
+    min-height: 560px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-xl);
+
+    border: 1px solid var(--color-border);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.muscle-hero__background {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+}
+
+.muscle-hero__background img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: -180px center;
+
+    transform: scale(1.03);
+
+    filter:
+        brightness(.62)
+        saturate(.90);
+
+}
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+.muscle-hero__overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(15,15,15,.05) 0%,
+            rgba(15,15,15,.20) 35%,
+            rgba(15,15,15,.78) 60%,
+            rgba(15,15,15,.95) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(15,15,15,.05),
+            rgba(15,15,15,.15) 40%,
+            rgba(15,15,15,.85)
+        );
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.muscle-hero__content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: 58% 42%;
+
+    align-items: center;
+
+    padding: 3rem;
+
+}
+
+.muscle-hero__empty{
+    width:100%;
+    height:100%;
+}
+
+/* ==========================================================
+   INFO
+========================================================== */
+
+.muscle-hero__info {
+
+    width: 430px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+}
+
+/* ==========================================================
+   EYEBROW
+========================================================== */
+
+.muscle-hero__eyebrow {
+
+    font-size: .75rem;
+
+    font-weight: var(--font-weight-semibold);
+
+    letter-spacing: .22em;
+
+    text-transform: uppercase;
+
+    color: var(--color-text-secondary);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.muscle-hero__header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 2rem;
+
+}
+
+.muscle-hero__title {
+
+    font-size: 4rem;
+
+    line-height: .95;
+
+    font-weight: var(--font-weight-bold);
+
+    letter-spacing: -.04em;
+
+    color: var(--color-text-primary);
+
+}
+
+.muscle-hero__rank {
+
+    margin-top: .75rem;
+
+    font-size: .9rem;
+
+    letter-spacing: .20em;
+
+    text-transform: uppercase;
+
+    color: var(--color-text-secondary);
+
+}
+
+/* ==========================================================
+   LEVEL
+========================================================== */
+
+.muscle-hero__level {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(25,25,25,.65);
+
+    backdrop-filter: blur(18px);
+
+}
+
+.muscle-hero__level-label {
+
+    font-size: .7rem;
+
+    letter-spacing: .20em;
+
+    color: var(--color-text-secondary);
+
+}
+
+.muscle-hero__level-value {
+
+    margin-top: .35rem;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: var(--color-text-primary);
+
+}
+
+/* ==========================================================
+   PROGRESS
+========================================================== */
+
+.muscle-hero__progress {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .85rem;
+
+}
+
+.muscle-hero__progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: .9rem;
+
+    color: var(--color-text-secondary);
+
+}
+
+.muscle-hero__progress-header strong {
+
+    color: var(--color-text-primary);
+
+}
+
+/* ==========================================================
+   BAR
+========================================================== */
+
+.muscle-hero__bar {
+
+    width: 100%;
+
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.08);
+
+}
+
+.muscle-hero__bar-fill {
+
+    width: 62%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: linear-gradient(
+        90deg,
+        #8B0000,
+        #D32F2F
+    );
+
+    box-shadow:
+        0 0 18px rgba(139,0,0,.35);
+
+}
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.muscle-hero__stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2rem;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.hero-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .4rem;
+
+}
+
+.hero-stat__label {
+
+    font-size: .72rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+
+    color: var(--color-text-secondary);
+
+}
+
+.hero-stat__value {
+
+    font-size: 1rem;
+
+    font-weight: var(--font-weight-semibold);
+
+    color: var(--color-text-primary);
+}
+
+
+/* ==========================================================
+   EXERCISE HERO
+========================================================== */
+
+.exercise-hero{
+    width:100%;
+}
+
+.exercise-hero__button{
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:2.5rem;
+
+    padding:2.5rem;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.02),
+            rgba(255,255,255,0)
+        ),
+        var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius-xl);
+
+    cursor:pointer;
+
+    text-align:left;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background-color .25s ease;
+
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.exercise-hero__button:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(139,0,0,.35);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.exercise-hero__button:hover .exercise-hero__indicator{
+
+    color:var(--color-primary);
+
+}
+
+.exercise-hero__button:hover .exercise-hero__indicator-arrow{
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.exercise-hero__header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:2rem;
+
+}
+
+.exercise-hero__title-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.75rem;
+
+}
+
+.exercise-hero__title{
+
+    font-size:2.8rem;
+
+    line-height:1;
+
+    font-weight:var(--font-weight-bold);
+
+    letter-spacing:-.04em;
+
+    color:var(--color-text-primary);
+
+}
+
+.exercise-hero__description{
+
+    max-width:520px;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    color:var(--color-text-secondary);
+
+}
+
+.exercise-hero__muscle{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    padding:.7rem 1.15rem;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(20,20,20,.55);
+
+    backdrop-filter:blur(12px);
+
+    color:var(--color-text-primary);
+
+    font-size:.95rem;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   PERFORMANCE
+========================================================== */
+
+.exercise-hero__performance{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+}
+
+.exercise-hero__stat{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    padding:2rem;
+
+}
+
+.exercise-hero__stat:first-child{
+
+    border-right:1px solid rgba(255,255,255,.06);
+
+}
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.exercise-hero__label{
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.20em;
+
+    color:var(--color-text-secondary);
+
+}
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.exercise-hero__number{
+
+    font-size:4rem;
+
+    line-height:1;
+
+    font-weight:700;
+
+    color:var(--color-text-primary);
+
+}
+
+/* ==========================================================
+   CAPTION
+========================================================== */
+
+.exercise-hero__caption{
+
+    font-size:1rem;
+
+    color:var(--color-text-secondary);
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.exercise-hero__footer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr auto;
+
+    gap:2rem;
+
+    align-items:center;
+
+    padding-top:1rem;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.exercise-hero__status,
+.exercise-hero__goal{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.45rem;
+
+}
+
+.exercise-hero__status-label,
+.exercise-hero__goal-label{
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    color:var(--color-text-secondary);
+
+}
+
+.exercise-hero__status-value,
+.exercise-hero__goal-value{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    color:var(--color-text-primary);
+
+}
+
+/* ==========================================================
+   READY
+========================================================== */
+
+.exercise-hero__indicator{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.75rem;
+
+    color:var(--color-text-secondary);
+
+    transition:color .25s ease;
+
+}
+
+.exercise-hero__indicator-text{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.exercise-hero__indicator-arrow{
+
+    font-size:1.5rem;
+
+    transition:transform .25s ease;
+
+}
